@@ -65,7 +65,7 @@ function SinglePost(props) {
     postMarkup = (
       <Grid>
         <Grid.Row>
-          <Grid.Column width={15}>
+          <Grid.Column width={15} className="singlePost">
             <Card fluid>
               <Card.Content>
                 <Image
@@ -100,8 +100,11 @@ function SinglePost(props) {
               </Card.Content>
             </Card>
             {user && (
-              <Card fluid>
+              <Card fluid className="createComment">
                 <Card.Content>
+                  <Grid.Column>
+                    <h3 style={{ paddingBottom: 5 }}>Post a Comment</h3>
+                  </Grid.Column>
                   <p>Post a comment</p>
                   <Form>
                     <div className="ui action input fluid">
@@ -126,6 +129,7 @@ function SinglePost(props) {
                 </Card.Content>
               </Card>
             )}
+            <h3>Comments</h3>
             {comments.map((comment) => (
               <Card fluid key={comment.id}>
                 <Card.Content>

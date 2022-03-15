@@ -44,6 +44,11 @@
   border-radius: 5px;
   box-shadow: 1px 1px 1px 1px lightgray;
 }
+.createComment{
+   border: 0.1rem solid lightgray !important;
+  border-radius: 5px !important;
+  box-shadow: 1px 1px 1px 1px lightgray !important;
+}
 .page-title{
   display: block !important;
   text-align: center;
