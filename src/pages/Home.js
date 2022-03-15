@@ -5,6 +5,8 @@ import Post from "../components/Post";
 import { useAuth } from "../authContext";
 import CreatePost from "../components/CreatePost";
 import { FETCH_POSTS } from "../util/graphql";
+import "./styles.css";
+
 
 function Home() {
   const { loading, data } = useQuery(FETCH_POSTS);
@@ -29,7 +31,11 @@ function Home() {
           <Transition.Group>
             {posts &&
               posts.map((post) => (
-                <Grid.Column key={post.id} style={{ marginBottom: 20 }}>
+                <Grid.Column
+                  key={post.id}
+                  style={{ marginBottom: 20 }}
+                  className="post"
+                >
                   <Post post={post} />
                 </Grid.Column>
               ))}

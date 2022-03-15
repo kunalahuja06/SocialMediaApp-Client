@@ -5,6 +5,8 @@ import {useNavigate} from 'react-router-dom'
 import gql from "graphql-tag";
 import {useForm} from '../util/hooks'
 import { useAuth } from "../authContext";
+import "./styles.css";
+
 
 function Register(props) {
   const [,dispatch]=useAuth()
@@ -49,6 +51,7 @@ function Register(props) {
           value={values.username}
           error={errors.username ? true : false}
           onChange={onChange}
+          className="input"
         />
         <Form.Input
           label="Email"
@@ -58,6 +61,7 @@ function Register(props) {
           value={values.email}
           error={errors.email ? true : false}
           onChange={onChange}
+          className="input"
         />
         <Form.Input
           label="Password"
@@ -67,6 +71,7 @@ function Register(props) {
           value={values.password}
           error={errors.password ? true : false}
           onChange={onChange}
+          className="input"
         />
         <Form.Input
           label="confirm Password"
@@ -76,6 +81,7 @@ function Register(props) {
           value={values.confirmPassword}
           error={errors.confirmPassword ? true : false}
           onChange={onChange}
+          className="input"
         />
         <Button type="submit" primary>
           Register

@@ -12,6 +12,8 @@ import {
   Icon,
   Label,
 } from "semantic-ui-react";
+import "./styles.css";
+
 
 import { useAuth } from "../authContext";
 import LikePost from "../components/LikePost";
@@ -63,16 +65,14 @@ function SinglePost(props) {
     postMarkup = (
       <Grid>
         <Grid.Row>
-          <Grid.Column width={2}>
-            <Image
-              src="https://react.semantic-ui.com/images/avatar/large/matthew.png"
-              size="small"
-              float="right"
-            />
-          </Grid.Column>
-          <Grid.Column width={10}>
+          <Grid.Column width={15}>
             <Card fluid>
               <Card.Content>
+                <Image
+                  src="https://react.semantic-ui.com/images/avatar/large/matthew.png"
+                  size="mini"
+                  float="right"
+                />
                 <Card.Header>{username}</Card.Header>
                 <Card.Meta>{moment(createdAt).fromNow()}</Card.Meta>
                 <Card.Description>{body}</Card.Description>

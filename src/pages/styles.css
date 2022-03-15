@@ -1,0 +1,60 @@
+@media screen and (max-width: 480px) {
+  .post {
+    width: 100% !important;
+    margin: auto;
+  }
+  .createPost{
+      width: 95% !important;
+  }
+  .input{
+    width:96% !important;
+  }
+  .singlePost{
+    margin: auto;
+  }
+}
+@media screen and (min-width: 480px) {
+  .post {
+    width: 80% !important;
+  }
+  .createPost{
+      width: 75% !important;
+      margin: auto;
+  }
+  .input{
+    width:100% !important;
+  }
+  .singlePost{
+    margin: auto;
+  }
+}
+@media screen and (min-width: 560px) {
+  .post {
+    width: 50% !important;
+  }
+  .createPost{
+      width: 75% !important;
+      margin: auto;
+  }
+  .input{
+    width:100% !important;
+  }
+  .singlePost{
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1020px) {
+  .post {
+    width: 33% !important;
+  }
+  /* .createPost{
+      width: 75% !important;
+      margin: auto;
+  }
+  .input{
+    width:100% !important;
+  }
+  .singlePost{
+    margin: auto;
+  } */
+}

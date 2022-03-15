@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom";
 import gql from "graphql-tag";
 import { useForm } from "../util/hooks";
 import { useAuth } from "../authContext";
+import "./styles.css";
+
 
 
 function Login(props) {
@@ -48,6 +50,7 @@ function Login(props) {
           value={values.username}
           error={errors.username ? true : false}
           onChange={onChange}
+          className="input"
         />
         <Form.Input
           label="Password"
@@ -57,6 +60,7 @@ function Login(props) {
           value={values.password}
           error={errors.password ? true : false}
           onChange={onChange}
+          className="input"
         />
         <Button type="submit" primary>
           Login
