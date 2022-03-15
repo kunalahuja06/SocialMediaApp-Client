@@ -69,9 +69,9 @@ function SinglePost(props) {
             <Card fluid>
               <Card.Content>
                 <Image
-                  src="https://react.semantic-ui.com/images/avatar/large/matthew.png"
+                  floated="right"
                   size="mini"
-                  float="right"
+                  src="https://react.semantic-ui.com/images/avatar/large/matthew.png"
                 />
                 <Card.Header>{username}</Card.Header>
                 <Card.Meta>{moment(createdAt).fromNow()}</Card.Meta>
@@ -105,7 +105,6 @@ function SinglePost(props) {
                   <Grid.Column>
                     <h3 style={{ paddingBottom: 5 }}>Post a Comment</h3>
                   </Grid.Column>
-                  <p>Post a comment</p>
                   <Form>
                     <div className="ui action input fluid">
                       <input

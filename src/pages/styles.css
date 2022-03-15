@@ -1,4 +1,6 @@
-
+.singlePost{
+  padding-bottom: 12px;
+}
 @media screen and (min-width: 360px) and (max-width:480px)  {
   .post {
     width: 100% !important;
